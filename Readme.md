@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://files.catbox.moe/r83igx.jpg" alt="˹ꜱʀɪ ᴍᴜꜱɪᴄ˼" width="400"/>
   
-  # 🎵 ˹ʜᴀꜱɪɪ ᴍᴜꜱɪᴄ˼
+  # 🎵 ˹ꜱʀɪ ᴍᴜꜱɪᴄ˼
   
   <p><b>A Powerful Telegram Music Player Bot</b></p>
   
