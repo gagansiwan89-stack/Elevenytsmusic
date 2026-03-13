@@ -1,21 +1,8 @@
-# ==============================================================================
-# shuffle.py - Shuffle Queue Command
-# ==============================================================================
-# This plugin handles shuffling the playback queue.
-#
-# Commands:
-# - /shuffle - Shuffle the current queue
-#
-# Requirements:
-# - User must be admin or authorized user
-# - Queue must have at least 2 tracks
-# ==============================================================================
-
 import random
 from pyrogram import filters, types
 
-from HasiiMusic import app, db, lang, queue
-from HasiiMusic.helpers import can_manage_vc
+from Elevenyts import app, db, lang, queue
+from Elevenyts.helpers import can_manage_vc
 
 
 @app.on_message(filters.command(["shuffle"]) & filters.group & ~app.bl_users)
