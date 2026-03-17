@@ -1,15 +1,3 @@
-# ==============================================================================
-# __main__.py - Main Entry Point for ˹ʜᴀꜱɪɪ ᴍᴜꜱɪᴄ˼
-# ==============================================================================
-# This is the main file that starts the bot. It performs the following:
-# 1. Connects to the database
-# 2. Starts the bot client
-# 3. Starts assistant (userbot) clients
-# 4. Loads all plugin modules
-# 5. Initializes YouTube cookies if configured
-# 6. Keeps the bot running until manually stopped
-# ==============================================================================
-
 import asyncio
 import importlib
 import sys
@@ -28,9 +16,9 @@ if sys.platform != "win32":
     except Exception:
         pass
 
-from HasiiMusic import (tune, app, config, db,
+from Elevenyts import (tune, app, config, db,
                    logger, stop, userbot, yt)
-from HasiiMusic.plugins import all_modules
+from Elevenyts.plugins import all_modules
 
 
 async def main():
@@ -50,7 +38,7 @@ async def main():
         # Step 5: Load all plugin modules (commands like /play, /pause, etc.)
         for module in all_modules:
             try:
-                importlib.import_module(f"HasiiMusic.plugins.{module}")
+                importlib.import_module(f"Elevenyts.plugins.{module}")
             except Exception as e:
                 logger.error(f"Failed to load plugin {module}: {e}", exc_info=True)
         logger.info(f"🔌 Loaded {len(all_modules)} plugin modules.")
