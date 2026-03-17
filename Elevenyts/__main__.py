@@ -28,6 +28,10 @@ async def main():
         
         # Step 2: Start the main bot client
         await app.boot()
+
+        # NEW: Run channel pre-check after bot is booted
+from Elevenyts.helpers.startup_hooks import precheck_channels
+        await precheck_channels()
         
         # Step 3: Start assistant/userbot clients (for joining voice chats)
         await userbot.boot()
