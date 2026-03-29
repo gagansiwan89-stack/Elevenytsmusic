@@ -1,7 +1,7 @@
 import os
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Elevenyts import app
+from PRINCEMUSIC import app
 import requests
 
 
@@ -58,7 +58,7 @@ async def get_link_group(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "❍ ᴄʀᴇᴀᴛᴇ ʙʏ ˹ sᴛʀᴀɴɢᴇʀ ™˼",
+                                    "❍ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ",
                                     url=upload_path,
                                 )
                             ]
