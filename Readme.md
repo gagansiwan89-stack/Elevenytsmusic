@@ -54,7 +54,6 @@ MONGO_DB_URI=your_mongodb_uri
 LOGGER_ID=your_logger_group_id
 OWNER_ID=your_user_id
 STRING_SESSION=your_pyrogram_session
-COOKIE_URL=youtube_cookies_url (optional)
 ```
 
 ### Installation
@@ -118,20 +117,6 @@ bash start
 - `/restart` - Restart the bot
 - `/logs` - Get bot logs
 
----
-
-## 🛠 Configuration
-
-### Audio Quality Settings
-
-The bot streams audio at **STUDIO** quality (highest available) with:
-
-- **Codec**: Opus (best quality for music)
-- **Format**: WebM container for audio downloads
-- **Sample Rate**: 48kHz
-- **Channels**: Stereo
-- **Optimization**: Max 5 concurrent downloads, 1MB chunks
-
 ### Customization
 
 - Modify language files in `Elevenyts/locales/`
@@ -143,7 +128,7 @@ The bot streams audio at **STUDIO** quality (highest available) with:
 ## 📞 Support & Contact
 
 - **Telegram Channel**: [@Elevenyts](https://t.me/elevenyts)
-- **Support Group**: [@Elevenyts_Music](https://t.me/elevenytsmusic) 
+- **Support Group**: [@Elevenyts Music](https://t.me/elevenytsmusic) 
 
 ---
 
@@ -154,13 +139,6 @@ The bot streams audio at **STUDIO** quality (highest available) with:
 - Keep your `.env` file secure and never share it publicly
 - For YouTube downloads, cookies may be required for some videos
 - Radio streams are live - no duration limits or downloads needed
-
----
-
-## 🙏 Credits
-Special thanks to [hasindu-nagolla](https://github.com/hasindu-nagolla)
-Special thanks to [AnonymousX1025](https://github.com/AnonymousX1025) for the original inspiration.
-
 ---
 
 <div align="center">
